@@ -14,7 +14,7 @@ body {
 	font-family : Arial;
 	color: white;
 	text-decoration: none;
-	padding: 15px 25px;
+	padding: 15px 10px;
 }
 .topnav .active {
 	background-color : #4CAF50;
@@ -36,14 +36,10 @@ footer a {
 	color: white;
 }
 
-.tkbs {
-	padding: 15px;
-	font-size: 30px;
-}
 
-.tkbc {
-	padding: 15px;
-	font-size: 30px;
+.tkbt {
+	padding: 5px;
+	font-size: 20px;
 }
 
 .tkb table {
