@@ -21,7 +21,7 @@ if(10>m){m="0"+m}
 if(10>h){h="0"+h}
 if(10>mi){mi="0"+mi}
 if(10>se){se="0"+se}
-document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / "+y+" - "+h+":"+mi+":"+se+"";
+document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / "+y+" | "+h+":"+mi+":"+se+"";
 }
 </script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,12 +38,16 @@ document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / 
 	<div class="body">
 			<div class="topnav">
 				<div class="homeicon">
-					<a class="adjective" href="./index.html"><img src="./homeicon.png" alt="Trang chu"></img></a>
+					<a href="./index.html"><img src="./homeicon.png" alt="Trang chu"></img></a>
+					<div class="top1">
+						<a class="active" href="./index.html">Trang chủ</a>
+					</div>
 				</div>
-				<div class="top">
-					<a class="active" href="./index.html">Trang chủ</a>
-					<a class="adjective" href="./tkb.html">Thời khóa biểu</a>
-					<a class="adjective" href="./anh.html">Ảnh</a>
+				<div class="top2">
+					<a href="./tkb.html">Thời khóa biểu</a>
+				</div>
+				<div class="top3">
+				<a href="./anh.html">Ảnh</a>
 				</div>
 				<div class="clock"><a><div id="clockDiv"></div></a></div>
 			</div>

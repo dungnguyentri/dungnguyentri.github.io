@@ -7,12 +7,26 @@ body {
 	overflow: hidden;
 }
 
-.body .topnav .top {
+.body .topnav .top2 {
 	float: left;
 	padding: 18px 0px;
 }
 
-.body .topnav .top a {
+.body .topnav .top2 a {
+	text-align: center;
+	font-size: 25px;
+	font-family : Arial;
+	color: white;
+	text-decoration: none;
+	padding: 19px 15px;
+}
+
+.body .topnav .top3 {
+	float: left;
+	padding: 18px 0px;
+}
+
+.body .topnav .top3 a {
 	text-align: center;
 	font-size: 25px;
 	font-family : Arial;
@@ -26,8 +40,17 @@ body {
 	color: white;
 }
 
-.body .topnav .top a:hover {
+.body .topnav .homeicon .top1 {
+	float: left;
+}
+
+.body .topnav .homeicon .top1 a {
+	text-align: center;
+	font-size: 25px;
+	font-family : Arial;
 	color: white;
+	text-decoration: none;
+	padding: 18px 15px;
 }
 
 .body .topnav .clock a {
