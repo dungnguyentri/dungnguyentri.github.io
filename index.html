@@ -3,33 +3,56 @@
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" base href="./css.css">
 	<title> Trang chủ </title>
+	<script language='javascript'>
+var myVar=setInterval(function(){Clock()},1000);
+function Clock() {
+a=new Date();
+w=Array("Chủ Nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy");
+var a=w[a.getDay()],
+w=new Date,
+d=w.getDate();
+m=w.getMonth()+1;
+y=w.getFullYear();
+h=w.getHours();
+mi=w.getMinutes();
+se=w.getSeconds();
+if(10>d){d="0"+d}
+if(10>m){m="0"+m}
+if(10>h){h="0"+h}
+if(10>mi){mi="0"+mi}
+if(10>se){se="0"+se}
+document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / "+y+" - "+h+":"+mi+":"+se+"";
+}
+</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-28HYKBLD6V"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XDX312W21G"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-28HYKBLD6V');
+		gtag('config', 'G-XDX312W21G');
 	</script>
 </head>
 <body>
-	<header>
-		<nav>
+	<div class="body">
 			<div class="topnav">
-				<a class="active" href="./index.html">Trang chủ</a>
-				<a class="adjective" href="./tkb.html">Thời khóa biểu</a>
-				<a class="adjective" href="./anh.html">Ảnh</a>
+				<div class="homeicon">
+					<a class="adjective" href="./index.html"><img src="./homeicon.png" alt="Trang chu"></img></a>
+				</div>
+				<div class="top">
+					<a class="active" href="./index.html">Trang chủ</a>
+					<a class="adjective" href="./tkb.html">Thời khóa biểu</a>
+					<a class="adjective" href="./anh.html">Ảnh</a>
+				</div>
+				<div class="clock"><a><div id="clockDiv"></div></a></div>
 			</div>
-		</nav>
-	</header>
-	<aside>
-		<center><h1>Hiện tại chưa có gì</h1></center>
-	</aside>
-	<article>
-	</article>
-	<footer>
-	<center><a>Copyright &copy 10A6 NTMK 2021</a></center>
-	</footer>
+		<div class="Marquee">
+			<marquee>Chào mừng đến với website của lớp 11A6 trường THPT Nguyễn Thị Minh Khai !!!</marquee>
+		</div>
+		<div class="footer">
+			<center><a>Copyright &copy 11A6 NTMK 2021</a></center>
+		</div>
+	</div>
 </body>
 </html>

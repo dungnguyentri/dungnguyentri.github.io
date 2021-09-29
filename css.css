@@ -2,40 +2,58 @@ body {
 	background-color: #fed8d3;
 }
 
-.topnav {
+.body .topnav {
 	background-color: #333;
 	overflow: hidden;
 }
 
-.topnav a {
+.body .topnav .top {
 	float: left;
+	padding: 18px 0px;
+}
+
+.body .topnav .top a {
 	text-align: center;
 	font-size: 25px;
 	font-family : Arial;
 	color: white;
 	text-decoration: none;
-	padding: 15px 10px;
+	padding: 19px 22px;
 }
-.topnav .active {
-	background-color : #4CAF50;
+
+.body .topnav .active {
+	background-color : #63e459;
 	color: white;
 }
 
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
+.body .topnav .top a:hover {
+	color: white;
 }
 
-footer {
+.body .topnav .homeicon img {
+	width : 100%;
+	height: 20%;
+}
+
+.body .topnav .homeicon a {
+	float: left;
+}
+
+.body .topnav .clock a {
+	padding: 19px;
+	float: right;
+	color: white;
+}
+
+.body .footer {
 	padding : 10px;
 	background-color: #333;
 }
 
-footer a {
+.body .footer a {
 	text-align: center;
 	color: white;
 }
-
 
 .tkbt {
 	padding: 5px;
@@ -44,4 +62,8 @@ footer a {
 
 .tkb table {
 	font-size: 20px;
+}
+
+.Marquee marquee {
+	font-size : 18px;
 }

@@ -3,6 +3,27 @@
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" base href="./css.css">
 	<title> Thời khóa biểu </title>
+	<script language='javascript'>
+var myVar=setInterval(function(){Clock()},1000);
+function Clock() {
+a=new Date();
+w=Array("Chủ Nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy");
+var a=w[a.getDay()],
+w=new Date,
+d=w.getDate();
+m=w.getMonth()+1;
+y=w.getFullYear();
+h=w.getHours();
+mi=w.getMinutes();
+se=w.getSeconds();
+if(10>d){d="0"+d}
+if(10>m){m="0"+m}
+if(10>h){h="0"+h}
+if(10>mi){mi="0"+mi}
+if(10>se){se="0"+se}
+document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / "+y+" - "+h+":"+mi+":"+se+"";
+}
+</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-28HYKBLD6V"></script>
 	<script>
@@ -14,45 +35,23 @@
 	</script>
 </head>
 <body>
-	<header>
-		<nav>
+	<div class="body">
 			<div class="topnav">
-				<a class="adjective" href="./index.html">Trang chủ</a>
-				<a class="active" href="./tkb.html">Thời khóa biểu</a>
-				<a class="adjective" href="./anh.html">Ảnh</a>
+				<div class="homeicon">
+					<a class="adjective" href="./index.html"><img src="./homeicon.png" alt="Trang chu"></img></a>
+				</div>
+				<div class="top">
+					<a class="adjective" href="./index.html">Trang chủ</a>
+					<a class="active" href="./tkb.html">Thời khóa biểu</a>
+					<a class="adjective" href="./anh.html">Ảnh</a>
+				</div>
+				<div class="clock"><a><div id="clockDiv"></div></a></div>
 			</div>
-		</nav>
-	</header>
-	<aside>
+		<div class="Marquee">
+			<marquee>Chào mừng đến với website của lớp 11A6 trường THPT Nguyễn Thị Minh Khai !!!</marquee>
+		</div>
 		<div class="tkbt">
 			<center><h1>Thời khóa biểu buổi sáng</h1></center>
-		</div>
-		<div class="tkb">
-			<center>
-			<table border="1" cellpadding="5">
-				<tr>
-					<td><b>Ca</b></td>
-					<td><b>Thứ hai</b></td>
-					<td><b>Thứ tư - Thứ bảy</b></td>
-					<td><b>Thứ năm</b></td>
-				</tr>
-				<tr>
-					<td><b>1</b></td>
-					<td>Tiếng Anh</td>
-					<td>Toán</td>
-					<td>Hóa học</td>
-				</tr>
-				<tr>
-					<td><b>2</b></td>
-					<td>Toán</td>
-					<td>Vật lý</td>
-					<td>Tin học</td>
-				</tr>
-			</table>
-			</center>
-		</div>
-		<div class="tkbt">
-			<center><h1>Thời khóa biểu buổi chiều</h1></center>
 		</div>
 		<div class="tkb">
 			<center>
@@ -69,47 +68,74 @@
 				<tr>
 					<td><b>1</b></td>
 					<td>Chào cờ</td>
-					<td>Công nghệ</td>
-					<td>Hóa học</td>
-					<td>Ngữ văn</td>
-					<td>Ngữ văn</td>
+					<td>Anh</td>
+					<td>Sinh</td>
+					<td>Anh</td>
+					<td>Hóa</td>
 					<td>Toán</td>
 				</tr>
 				<tr>
 					<td><b>2</b></td>
-					<td>Hóa học</td>
-					<td>Sinh học</td>
-					<td>Tiếng Anh</td>
-					<td>Ngữ văn</td>
-					<td>Giáo dục công dân</td>
-					<td>Quốc phòng</td>
+					<td>Lý</td>
+					<td>QP-AN</td>
+					<td>Anh</td>
+					<td>Địa</td>
+					<td>Thể dục</td>
+					<td>Thể dục</td>
 				</tr>
 				<tr>
 					<td><b>3</b></td>
-					<td>Vật lý</td>
-					<td>Thể dục</td>
-					<td>Vật lý</td>
-					<td>Lịch sử</td>
-					<td>Thể dục</td>
 					<td>Toán</td>
+					<td>Công nghệ</td>
+					<td>Toán</td>
+					<td>GDCD</td>
+					<td>Công nghệ</td>
+					<td>Văn</td>
 				</tr>
 				<tr>
 					<td><b>4</b></td>
-					<td>Địa lí</td>
-					<td>Địa lí</td>
-					<td>Tiếng Anh</td>
+					<td>Sử</td>
+					<td>Lý</td>
 					<td>Toán</td>
-					<td>Tiếng Anh</td>
-					<td>Vật lý</td>
+					<td>Lý</td>
+					<td>Anh</td>
+					<td>Văn</td>
 				</tr>
 				<tr>
 					<td><b>5</b></td>
 					<td>Toán</td>
-					<td>Nước ngoài</td>
-					<td>X</td>
-					<td>Toán</td>
-					<td>Tiếng Anh</td>
+					<td>Hóa</td>
+					<td>Văn</td>
+					<td>Văn</td>
+					<td>Kella</td>
 					<td>Sinh hoạt</td>
+				</tr>
+			</table>
+			</center>
+		</div>
+				<div class="tkbt">
+			<center><h1>Thời khóa biểu buổi chiều</h1></center>
+		</div>
+		<div class="tkb">
+			<center>
+			<table border="1" cellpadding="5">
+				<tr>
+					<td><b>Ca</b></td>
+					<td><b>Thứ hai</b></td>
+					<td><b>Thứ sáu</b></td>
+					<td><b>Thứ bảy</b></td>
+				</tr>
+				<tr>
+					<td><b>1</b></td>
+					<td>Tin</td>
+					<td>Toán</td>
+					<td>Toán</td>
+				</tr>
+				<tr>
+					<td><b>2</b></td>
+					<td>X</td>
+					<td>Anh</td>
+					<td>Lý</td>
 				</tr>
 			</table>
 			</center>
@@ -120,98 +146,18 @@
 		<div class="tkb">
 			<center>
 			<table border="1" cellpadding="5">
-				<tr>
-					<td><b>Môn</b></td>
-					<td><b>Giáo viên</b></td>
-					<td><b>ID</b></td>
-					<td><b>Pass</b></td>
-				</tr>
-				<tr>
-					<td><b>Toán</b></td>
-					<td>Lan Oanh</td>
-					<td>661 608 5544</td>
-					<td>316519</td>	
-				</tr>
-				<tr>
-					<td><b>Vật lí</b></td>
-					<td>Thu Hà</td>
-					<td>973 933 1102</td>
-					<td>545551</td>	
-				</tr>
-				<tr>
-					<td><b>Ngữ văn</b></td>
-					<td>Lan Anh</td>
-					<td>657 677 0866</td>
-					<td>123456</td>	
-				</tr>
-				<tr>
-					<td><b>Tiếng anh</b></td>
-					<td>Kim Oanh</td>
-					<td>X</td>
-					<td>X</td>	
-				</tr>
-				<tr>
-					<td><b>Sinh học</b></td>
-					<td>Mai</td>
-					<td>546 124 5777</td>
-					<td>480260</td>	
-				</tr>
-				<tr>
-					<td><b>Lịch sử</b></td>
-					<td>Nguyệt</td>
-					<td>308 374 1437</td>
-					<td>532824</td>	
-				</tr>
-				<tr>
-					<td><b>Địa lí</b></td>
-					<td>Luật</td>
-					<td>580 936 0071</td>
-					<td>778772</td>	
-				</tr>
-				<tr>
-					<td><b>Hóa học</b></td>
-					<td>Thu Hằng</td>
-					<td>757 472 3092</td>
-					<td>098765</td>	
-				</tr>
-				<tr>
-					<td><b>Công nghệ</b></td>
-					<td>Thúy Hằng</td>
-					<td>694 051 0016</td>
-					<td>5jh6WS</td>	
-				</tr>
-				<tr>
-					<td><b>Thể dục</b></td>
-					<td>Giang</td>
-					<td>891 789 9919</td>
-					<td>Giang179</td>	
-				</tr>
-				<tr>
-					<td><b>Tin học</b></td>
-					<td>Thúy</td>
-					<td>758 978 5963</td>
-					<td>r4YDNb</td>	
-				</tr>
-				<tr>
-					<td><b>Quốc phòng</b></td>
-					<td>Kiên</td>
-					<td>950 843 5866</td>
-					<td>309569</td>	
-				</tr>
-				<tr>
-					<td><b>Giao dục công dân</b></td>
-					<td>Huệ</td>
-					<td>560 446 8989</td>
-					<td>549036</td>	
-				</tr>
+			<tr>
+			<td>ID</td>
+			<td>Pass</td>
+			</tr>
+			<tr>
+			<td>346 326 7424</td>
+			<td>11a62021</td>
 			</table>
 			</center>
 		</div>
-	</aside>
-	<article>
-	</article>
-	<footer>
-	<center><a>Copyright &copy 10A6 NTMK 2021</a></center>
-	</footer>
+		<div class="footer">
+			<center><a>Copyright &copy 11A6 NTMK 2021</a></center>
+		</div>
 </body>
 </html>
