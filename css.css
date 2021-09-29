@@ -18,7 +18,7 @@ body {
 	font-family : Arial;
 	color: white;
 	text-decoration: none;
-	padding: 19px 22px;
+	padding: 19px 15px;
 }
 
 .body .topnav .active {
@@ -30,19 +30,14 @@ body {
 	color: white;
 }
 
-.body .topnav .homeicon img {
-	width : 100%;
-	height: 20%;
-}
-
-.body .topnav .homeicon a {
-	float: left;
-}
-
 .body .topnav .clock a {
 	padding: 19px;
 	float: right;
 	color: white;
+}
+
+.body .topnav .homeicon a {
+	float: left;
 }
 
 .body .footer {
